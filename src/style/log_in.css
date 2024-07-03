@@ -1,52 +1,61 @@
 /* log_in.css */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
 }
 
-.login-container {
+.custom-login-container {
   display: flex;
   height: 100vh;
 }
 
-.left-half {
+.custom-left-half {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e0f7e9;
 }
-
-.background-image {
+.custom-right-half{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f7e9;
+  width: 50%;
+}
+.custom-background-image {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.right-half {
+.custom-right-half {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-  padding: 2rem;
 }
 
-.login-form {
+.custom-login-form {
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
+  height: 100%;
   max-width: 400px;
 }
 
-.form-image {
+.custom-form-image {
   max-width: 150px;
   margin-bottom: 1rem;
+  display: flex;
+  
 }
 
 h2 {
@@ -59,17 +68,13 @@ form {
   flex-direction: column;
 }
 
-.input-field-container {
-  margin-bottom: 1rem;
-}
-
-.input-field-container label {
+.custom-label {
   margin-bottom: 0.5rem;
   color: #2c6e49;
   font-weight: bold;
 }
 
-.input-field-container input {
+.custom-input {
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.5rem;
@@ -78,12 +83,16 @@ form {
   box-sizing: border-box;
 }
 
-.input-field-container input:focus {
+.custom-input:focus {
   border-color: #2c6e49;
   outline: none;
 }
 
-.main-button {
+.custom-button-container {
+  margin-top: 1rem;
+}
+
+.custom-main-button {
   background-color: #2c6e49;
   color: #ffffff;
   padding: 0.75rem;
@@ -94,6 +103,6 @@ form {
   transition: background-color 0.3s;
 }
 
-.main-button:hover {
+.custom-main-button:hover {
   background-color: #1d4d33;
 }
