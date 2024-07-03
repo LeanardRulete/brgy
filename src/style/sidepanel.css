@@ -31,8 +31,14 @@
   text-align: center; /* Center text horizontally */
 }
 
+
 h2 {
   margin-top: 10px; /* Optional: Add some space above the MENU heading */
+}
+
+.custom-form-image {
+  max-width: 150px;
+  margin-bottom: 1rem;
 }
 
 .sidepanel-button {

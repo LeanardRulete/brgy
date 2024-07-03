@@ -2,16 +2,16 @@ import React from "react";
 
 interface MainButtonProps {
   buttonText: string;
-  type?: "button" | "submit" | "reset"; // Add type prop for the button
+  type?: "button" | "submit" | "reset";
 }
 
 const MainButton: React.FC<MainButtonProps> = ({
   buttonText,
-  type = "button", // Default to "button" if not specified
+  type = "button",
 }) => {
   return (
-    <div>
-      <button type={type} className="bg-blue-200 w-full">
+    <div className="custom-button-container">
+      <button type={type} className="custom-main-button">
         {buttonText}
       </button>
     </div>

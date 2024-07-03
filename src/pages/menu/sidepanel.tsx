@@ -6,6 +6,7 @@ const SidePanel: React.FC = () => {
   return (
     <div className="sidepanel-container">
       <div className="button-container">
+      <img src={logoImage} alt="Logo" className="custom-form-image" />
         <h4 className="location">Poblacion 2</h4>
         <h4 className="location">Tagbilaran City</h4>
         <h2>MENU</h2>

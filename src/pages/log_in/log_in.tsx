@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import InputField from "../../components/input_fields/input_fields";
+import MainButton from "../../components/main_button";
 import "../../style/log_in.css";
 import brgyImage from "../../assets/brgy.jpg";
 import logoImage from "../../assets/logopic.png";
-import MainButton from "../../components/main_button";
 
 const Login: React.FC = () => {
   const [userData, setUserData] = useState({ username: "", password: "" });
@@ -29,17 +29,17 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="left-half">
-        <img src={brgyImage} alt="Login Image" className="background-image" />
+    <div className="custom-login-container">
+      <div className="custom-left-half">
+        <img src={brgyImage} alt="Login Image" className="custom-background-image" />
       </div>
-      <div className="right-half">
-        <div className="login-form">
-          <img src={logoImage} alt="Logo" className="form-image" />
+      <div className="custom-right-half">
+        <div className="custom-login-form">
+          <img src={logoImage} alt="Logo" className="custom-form-image" />
           <h2>Login</h2>
           <form onSubmit={handleSubmit}>
             <InputField
-              label="Username*"
+              label="Username"
               type="text"
               handleInputChange={handleInputChange}
               name="username"
@@ -48,7 +48,7 @@ const Login: React.FC = () => {
               required
             />
             <InputField
-              label="Password*"
+              label="Password"
               type="password"
               handleInputChange={handleInputChange}
               name="password"
@@ -56,9 +56,7 @@ const Login: React.FC = () => {
               placeholder="Enter your Password"
               required
             />
-            <div className="button-container">
-              <MainButton buttonText="Log in" type="submit" />
-            </div>
+            <MainButton buttonText="Log in" type="submit" />
           </form>
         </div>
       </div>

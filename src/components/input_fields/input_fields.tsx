@@ -1,4 +1,3 @@
-// input_fields.tsx
 import React from "react";
 
 interface InputFieldProps {
@@ -8,7 +7,7 @@ interface InputFieldProps {
   name: string;
   iconClass: string;
   placeholder: string;
-  required?: boolean; // Optional 'required' prop
+  required?: boolean;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -21,15 +20,15 @@ const InputField: React.FC<InputFieldProps> = ({
   required = false,
 }) => {
   return (
-    <div className="input-field">
-      <label className="label">{label}</label>
-      <div className="icon">
+    <div className="custom-input-field">
+      <label className="custom-label">{label}</label>
+      <div className="custom-icon">
         <i className={iconClass}></i>
       </div>
       <input
         type={type}
         name={name}
-        className="input"
+        className="custom-input"
         onChange={handleInputChange}
         placeholder={placeholder}
         required={required}
