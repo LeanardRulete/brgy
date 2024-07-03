@@ -1,0 +1,54 @@
+.sidepanel-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa; /* Optional: a light background color */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #8af481; /* Green background for the button container */
+  border: 1px solid #ddd; /* Light border around the button container */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 380px; /* Fixed width for the button container */
+  height: 100vh;
+  align-items: center; /* Center items horizontally */
+}
+
+.content-container {
+  flex-grow: 1; /* Take up the remaining space */
+  padding: 20px;
+}
+
+.location {
+  margin: 0; /* Remove default margin */
+  line-height: 1.2; /* Adjust line height for close spacing */
+  text-align: center; /* Center text horizontally */
+}
+
+h2 {
+  margin-top: 10px; /* Optional: Add some space above the MENU heading */
+}
+
+.sidepanel-button {
+  padding: 10px;
+  background-color: #ffffff; /* White background for buttons */
+  color: rgb(9, 9, 9); /* Dark text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-align: center; /* Center the text */
+  width: 200px; /* Fixed width */
+  height: 40px; /* Fixed height */
+}
+
+.sidepanel-button:hover {
+  background-color: #f55c3a; /* Darker background on hover */
+}
